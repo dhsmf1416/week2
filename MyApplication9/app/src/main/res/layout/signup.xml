@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:text="세심함이 돋보이는 회원 가입"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="ID\n(6~12자 영어 및 숫자)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/pwvalid"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:text="유효체크"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pwtext2"
+        app:layout_constraintTop_toBottomOf="@+id/idvalid" />
+
+    <Button
+        android:id="@+id/idvalid"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="유효체크"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idText"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호 확인"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/pwtext2"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/pwtext" />
+
+    <EditText
+        android:id="@+id/pwtext"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="돌아가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signup" />
+
+    <TextView
+        android:id="@+id/idalarm"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+    <TextView
+        android:id="@+id/pwalarm"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/pwtext2" />
+</android.support.constraint.ConstraintLayout>
